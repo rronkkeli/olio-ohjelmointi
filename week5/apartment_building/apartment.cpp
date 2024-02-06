@@ -4,6 +4,8 @@
 using namespace std;
 
 Apartment::Apartment() {
+    *this->occupants = new int;
+    *this->area = new int;
     cout << "Asunto luotiin" << endl;
 }
 
@@ -12,8 +14,8 @@ Apartment::~Apartment() {
 }
 
 void Apartment::setProperties(int o, int a) {
-    this->occupants = o;
-    this->area = a;
+    &this->occupants = o;
+    &this->area = a;
     cout << "Asuntoon m\x84\x84ritetty asukkaita " << o << " hl\x94\x84 ja neli\x94t\x84 " << a << endl;
 }
 

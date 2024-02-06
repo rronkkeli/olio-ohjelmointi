@@ -4,7 +4,7 @@
 #include "floor.h"
 
 class GroundFloor : public Floor {
-    Apartment apt1, apt2;
+    Apartment *apt1, *apt2;
 public:
     GroundFloor();
     ~GroundFloor();

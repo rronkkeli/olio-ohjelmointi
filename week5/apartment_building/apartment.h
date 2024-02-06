@@ -3,7 +3,7 @@
 
 
 class Apartment {
-    int occupants, area;
+    int *occupants, *area;
 public:
     Apartment();
     ~Apartment();

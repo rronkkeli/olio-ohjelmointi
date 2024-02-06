@@ -4,8 +4,10 @@
 using namespace std;
 
 int main() {
-    Building building;
+    Building *building = new Building();
 
     cout << "Rakennuksen kulutus on " << building.calculateConsumption(1) << endl;
+
+    delete building;
     return 0;
 }

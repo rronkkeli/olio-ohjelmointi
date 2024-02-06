@@ -3,7 +3,7 @@
 #include "apartment.h"
 
 class Floor {
-    Apartment apt1, apt2, apt3, apt4;
+    Apartment *apt1, *apt2, *apt3, *apt4;
 public:
     Floor();
     ~Floor();

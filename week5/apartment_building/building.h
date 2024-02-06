@@ -4,8 +4,8 @@
 #include "floor.h"
 
 class Building {
-    GroundFloor first;
-    Floor second, third;
+    GroundFloor *first;
+    Floor *second, *third;
 public:
     Building();
     ~Building();
